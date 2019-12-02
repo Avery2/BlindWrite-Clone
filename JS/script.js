@@ -38,12 +38,12 @@ function toggleBlur() {
     blur.style.WebkitFilter = "blur(0px)";
     button.innerHTML = "Write";
     isBlurred = false;
-    // console.log("toggle");
+    document.getElementById("text_input").focus();
   } else {
     blur.style.WebkitFilter = "blur(1vw)";
     button.innerHTML = "BlindWrite";
     isBlurred = true;
-    // console.log("toggle");
+    document.getElementById("text_input").focus();
   }
 }
 
